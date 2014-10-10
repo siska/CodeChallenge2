@@ -8,7 +8,11 @@
 
 #import "CityViewController.h"
 
-@interface CityViewController ()
+@interface CityViewController () <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *cityLabel;
+@property (strong, nonatomic) IBOutlet UILabel *stateLabel;
+@property (strong, nonatomic) IBOutlet UITextField *cityTextField;
+@property (strong, nonatomic) IBOutlet UITextField *stateTextField;
 
 @end
 
@@ -16,22 +20,56 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.cityLabel.text = self.citySeg.name;
+    self.stateLabel.text = self.citySeg.state;
+
+    self.cityTextField.hidden = YES;
+    self.stateTextField.hidden = YES;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onEditButtonTapped:(id)sender {
+    self.cityLabel.hidden = YES;
+    self.stateLabel.hidden = YES;
+    self.cityTextField.hidden = NO;
+    self.cityTextField.hidden = NO;
+    self.cityTextField.text = self.citySeg.name;
+    self.stateTextField.text = self.citySeg.state;
 }
 
-/*
-#pragma mark - Navigation
+- (IBAction)onWikiTapGesture:(UITapGestureRecognizer *)sender
+{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+
 }
-*/
+
+
+
+
+
+
+
+#pragma mark - TextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+
+    if (self.cityLabel.text != self.cityTextField.text)
+    {
+        self.citySeg.name = self.cityTextField.text;
+        self.cityLabel.text = self.citySeg.name;
+        self.cityLabel.hidden = NO;
+        self.cityTextField.hidden = YES;
+    }
+    if (self.stateLabel.text != self.stateTextField.text)
+    {
+        self.citySeg.state = self.stateTextField.text;
+        self.stateLabel.text = self.citySeg.state;
+        self.stateLabel.hidden = NO;
+        self.stateTextField.hidden = YES;
+    }
+    return YES;
+}
+
 
 @end

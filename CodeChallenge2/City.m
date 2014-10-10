@@ -10,4 +10,10 @@
 
 @implementation City
 
+- (void)getSite:(City *)sender
+{
+//stopped while on step 4 - defining this and the city.h file
+}
+
 @end
+

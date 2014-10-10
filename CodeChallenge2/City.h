@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol CityDelegate // do I need this-> <NSObject>
+
+- (void)sendToSite:(id)sender; //stopped while on step 4 - defining this and the method on the city.m file
+@end
+
 @interface City : NSObject
 @property NSString *name;
 @property NSString *state;
+@property NSString *site;
+
+- (void) getSite:(City *)sender;
+
+@property id <CityDelegate> delegate;
 
 @end

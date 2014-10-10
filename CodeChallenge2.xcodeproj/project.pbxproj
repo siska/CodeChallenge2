@@ -16,6 +16,7 @@
 		12567ED619E8200B008E23A2 /* CodeChallenge2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567ED519E8200B008E23A2 /* CodeChallenge2Tests.m */; };
 		12567EE119E82322008E23A2 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567EE019E82322008E23A2 /* City.m */; };
 		12567EE419E82C9A008E23A2 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567EE319E82C9A008E23A2 /* CityViewController.m */; };
+		12567EE719E83639008E23A2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567EE619E83639008E23A2 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		12567EE019E82322008E23A2 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		12567EE219E82C9A008E23A2 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		12567EE319E82C9A008E23A2 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		12567EE519E83639008E23A2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		12567EE619E83639008E23A2 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				12567EC119E8200B008E23A2 /* ViewController.m */,
 				12567EE219E82C9A008E23A2 /* CityViewController.h */,
 				12567EE319E82C9A008E23A2 /* CityViewController.m */,
+				12567EE519E83639008E23A2 /* WebViewController.h */,
+				12567EE619E83639008E23A2 /* WebViewController.m */,
 				12567EDF19E82322008E23A2 /* City.h */,
 				12567EE019E82322008E23A2 /* City.m */,
 				12567EC619E8200B008E23A2 /* Images.xcassets */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12567EC219E8200B008E23A2 /* ViewController.m in Sources */,
+				12567EE719E83639008E23A2 /* WebViewController.m in Sources */,
 				12567EBF19E8200B008E23A2 /* AppDelegate.m in Sources */,
 				12567EE419E82C9A008E23A2 /* CityViewController.m in Sources */,
 				12567EE119E82322008E23A2 /* City.m in Sources */,
