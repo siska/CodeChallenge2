@@ -14,6 +14,8 @@
 		12567EC719E8200B008E23A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12567EC619E8200B008E23A2 /* Images.xcassets */; };
 		12567ECA19E8200B008E23A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12567EC819E8200B008E23A2 /* LaunchScreen.xib */; };
 		12567ED619E8200B008E23A2 /* CodeChallenge2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567ED519E8200B008E23A2 /* CodeChallenge2Tests.m */; };
+		12567EE119E82322008E23A2 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567EE019E82322008E23A2 /* City.m */; };
+		12567EE419E82C9A008E23A2 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12567EE319E82C9A008E23A2 /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		12567ECF19E8200B008E23A2 /* CodeChallenge2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallenge2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12567ED419E8200B008E23A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12567ED519E8200B008E23A2 /* CodeChallenge2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeChallenge2Tests.m; sourceTree = "<group>"; };
+		12567EDF19E82322008E23A2 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		12567EE019E82322008E23A2 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		12567EE219E82C9A008E23A2 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		12567EE319E82C9A008E23A2 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,13 @@
 			children = (
 				12567EBD19E8200B008E23A2 /* AppDelegate.h */,
 				12567EBE19E8200B008E23A2 /* AppDelegate.m */,
+				12567EC319E8200B008E23A2 /* Main.storyboard */,
 				12567EC019E8200B008E23A2 /* ViewController.h */,
 				12567EC119E8200B008E23A2 /* ViewController.m */,
-				12567EC319E8200B008E23A2 /* Main.storyboard */,
+				12567EE219E82C9A008E23A2 /* CityViewController.h */,
+				12567EE319E82C9A008E23A2 /* CityViewController.m */,
+				12567EDF19E82322008E23A2 /* City.h */,
+				12567EE019E82322008E23A2 /* City.m */,
 				12567EC619E8200B008E23A2 /* Images.xcassets */,
 				12567EC819E8200B008E23A2 /* LaunchScreen.xib */,
 				12567EB919E8200B008E23A2 /* Supporting Files */,
@@ -221,6 +231,8 @@
 			files = (
 				12567EC219E8200B008E23A2 /* ViewController.m in Sources */,
 				12567EBF19E8200B008E23A2 /* AppDelegate.m in Sources */,
+				12567EE419E82C9A008E23A2 /* CityViewController.m in Sources */,
+				12567EE119E82322008E23A2 /* City.m in Sources */,
 				12567EBC19E8200B008E23A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

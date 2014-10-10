@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CityViewController.h
 //  CodeChallenge2
 //
 //  Created by S on 10/10/14.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "City.h"
 
-@interface ViewController : UIViewController
-@property NSMutableArray *cities;
+@interface CityViewController : UIViewController
+
+@property City *citySeg;
 
 @end
-
